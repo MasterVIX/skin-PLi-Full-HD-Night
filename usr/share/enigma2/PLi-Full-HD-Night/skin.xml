@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <skin>
   <!-- Skin: PLi-Full-HD-Night based on Magic_HD_Shadow_MiniTV by Vali (c)2009-2010 -->
   <!-- This skin include derived work from VU+NL, Milo, Littlesat and others, PLi-Full-HD-Night by DelaGroov -->
@@ -6,7 +6,7 @@
   <!-- BUT DO NOT REMOVE OR CHANGE THE SECOND LINE IN !!!    -->
   <!-- Do whatever you want with this skin, but don't tell it's yours, or your idea -->
   
-  <!-- PLi-Full-HD-Night vs.44 -->
+  <!-- PLi-Full-HD-Night vs.45 -->
   
   <!-- Head -->
 
@@ -1276,8 +1276,8 @@
 
   <screen name="PluginBrowser" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate2"/>
-    <eLabel text="Plugin browser" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
+    <panel name="ButtonTemplate_2"/>
+    <!--<eLabel text="Plugin browser" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />-->
     <widget name="list" position="590,105" size="680,555" font="Regular;26" enableWrapAround="1" scrollbarMode="showOnDemand" />
   </screen>
 
@@ -2233,11 +2233,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 
   <screen name="SubtitleDisplay" position="fill" backgroundColor="transparent" zPosition="-1" flags="wfNoBorder" />
 
-  <screen name="About" position="fill" flags="wfNoBorder">
+  <screen name="AboutOE" position="fill" flags="wfNoBorder">
     <panel name="PigTemplate"/>
-    <panel name="ButtonTemplate_2"/>
-    <eLabel text="About" position="85,30" size="1085,55" backgroundColor="secondBG" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="left" />
-    <widget name="AboutScrollLabel" font="Regular;22" position="635,125" size="580,500" zPosition="2" halign="center" />
+    <panel name="KeyInfoTemplate"/>
+    <eLabel text="= Release notes" position="1050,682" size="220,26" backgroundColor="secondBG" font="Regular;22" halign="left" transparent="1" zPosition="1"/>
+    <widget source="lab1" render="Label" position="10,455" size="500,25" font="Regular; 24" transparent="0" zPosition="2" foregroundColor="greenlight" halign="center"/>
+    <widget source="lab2" render="Label" position="10,480" size="500,20" font="Regular; 19" transparent="0" zPosition="2" foregroundColor="greenlight" halign="center"/>
+    <widget source="lab3" render="Label" position="10,500" size="500,20" font="Regular; 19" transparent="0" zPosition="1" foregroundColor="greenlight" halign="center"/>
+    <widget name="AboutScrollLabel" scrollbarMode="showOnDemand" font="Regular;20" position="520,90" size="755,583" transparent="1"/>
+    <eLabel text="Pli-Full-HD-Night by DeLaGrooV" position="5,530" size="520,30" font="Regular; 20" halign="center" transparent="1" zPosition="1" valign="center" foregroundColor="greenlight"/>
   </screen>
 
   <screen flags="wfNoBorder" name="AboutReleaseNotes" position="fill" title="Release Notes">
